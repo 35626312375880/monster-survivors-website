@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Survive the Endless Waves of Monsters</title>
+    <meta name="description" content="Monster Survivors is an action-packed roguelike game where you battle endless waves of monsters, upgrade your abilities, and fight to survive as long as possible.">
+    <link rel="canonical" href="https://monstersurvivors.com" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#0071E3',
+                        'apple-gray': '#F5F5F7',
+                        'apple-dark': '#1D1D1F',
+                        'apple-light': '#FBFBFD',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body class="bg-apple-light text-apple-dark">
+    <header class="bg-apple-blue text-white py-6 md:py-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <h1 class="text-3xl md:text-5xl font-bold text-center">Monster Survivors</h1>
+            <p class="text-xl md:text-2xl text-center mt-4 max-w-3xl mx-auto">Fight endless waves of monsters, upgrade your character, and survive as long as possible!</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8 py-8 md:py-12">
+        <section class="mb-12">
+            <div class="bg-apple-gray rounded-xl overflow-hidden shadow-lg">
+                <div class="game-container">
+                    <iframe src="https://www.onlinegames.io/monster-survivors/" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="mt-4 text-center">
+                <p class="text-sm text-gray-500">Use WASD or arrow keys to move, and defeat as many monsters as possible!</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-apple-blue pb-2">About Monster Survivors</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="mb-4">Monster Survivors is an action-packed roguelike game inspired by popular titles like Vampire Survivors. Take control of a brave hero and face endless waves of monsters in a battle for survival!</p>
+                    <p class="mb-4">As you defeat enemies, you'll gain experience and unlock powerful upgrades that enhance your abilities. Choose your upgrades wisely to create synergistic builds that can handle the increasingly difficult monster waves.</p>
+                    <p>How long can you survive against the relentless monster hordes? Challenge your friends to beat your high score and climb to the top of the leaderboards!</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Game Features:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Roguelike gameplay with procedurally generated enemy waves</li>
+                        <li>Unlock and upgrade various abilities and weapons</li>
+                        <li>Multiple character classes with unique starting abilities</li>
+                        <li>Epic boss battles that test your skills and strategy</li>
+                        <li>Beautifully crafted pixel art graphics</li>
+                        <li>Engaging sound effects and music</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-apple-blue pb-2">How to Play</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Controls:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>W, A, S, D</strong> or <strong>Arrow Keys</strong>: Move your character</li>
+                        <li><strong>Space</strong>: Special ability (when available)</li>
+                        <li><strong>ESC</strong>: Pause the game</li>
+                    </ul>
+                    <h3 class="text-xl font-semibold mt-6 mb-4">Tips for Success:</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Keep moving to avoid being surrounded by monsters</li>
+                        <li>Prioritize upgrading your favorite weapons first</li>
+                        <li>Collect experience gems dropped by defeated monsters</li>
+                        <li>Pay attention to enemy patterns and adapt your strategy</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Game Progression:</h3>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li>Start with basic abilities and defeat monsters to gain experience</li>
+                        <li>Level up to unlock new upgrades and enhance existing ones</li>
+                        <li>Face increasingly difficult waves of monsters and mini-bosses</li>
+                        <li>Collect power-ups and special items to boost your character</li>
+                        <li>Survive as long as possible to achieve a high score</li>
+                        <li>Game ends when your health reaches zero</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 border-b-2 border-apple-blue pb-2">Character Classes</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-apple-gray rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Warrior</h3>
+                    <p class="mb-3">A formidable fighter with high health and strong melee attacks. The Warrior excels at close combat and can withstand significant damage.</p>
+                    <p class="font-medium">Starting weapons: Sword, Shield Bash</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Mage</h3>
+                    <p class="mb-3">A master of magical arts with powerful area-of-effect spells. The Mage can deal massive damage to groups of enemies from a distance.</p>
+                    <p class="font-medium">Starting weapons: Magic Bolt, Frost Nova</p>
+                </div>
+                <div class="bg-apple-gray rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Rogue</h3>
+                    <p class="mb-3">A nimble fighter with high evasion and critical hit chance. The Rogue excels at hit-and-run tactics and dealing burst damage.</p>
+                    <p class="font-medium">Starting weapons: Dagger, Throwing Knives</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-dark text-white py-8">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <p class="mb-4">&copy; 2025 Monster Survivors. All rights reserved.</p>
+            <p class="text-sm">Monster Survivors is a fictional roguelike survival game. This website is created for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
